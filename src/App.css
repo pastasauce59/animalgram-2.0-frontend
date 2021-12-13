@@ -1,1 +1,28 @@
-body {background-color: coral;}
+body {
+    background-image: url("https://newsfeed.org/wp-content/uploads/camera-classic-instagram-1338789.jpg");
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    background-color: #bb909e;
+    border: 5px solid #3d2c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0 1rem 1rem;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  form input {
+    margin: 0.25rem 0;
+  }
+  
+  form input[type="submit"] {
+    width: 40%;
+  }

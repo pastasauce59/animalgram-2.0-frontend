@@ -18,7 +18,7 @@ function Login(props) {
     }
 
     return (
-        <div>
+        <div className="login-component">
             <form onSubmit={null}>
                 <h1>🐕Animalgram📸</h1>
                 <label>
@@ -48,8 +48,12 @@ function Login(props) {
 
                 <input type='submit' value='Login'/>
 
-            <h6>Don't Have an account? <a href="http://localhost:3000/register">Register Here</a></h6>
-            </form> 
+            {/* <h6>Don't have an account? <a href="http://localhost:3000/signup">Sign up</a></h6> */}
+            </form>
+
+            <form>
+                <h6>Don't have an account? <a href="./Signup">Sign up</a></h6>
+            </form>
         </div>
     );
 }

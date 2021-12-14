@@ -1,13 +1,16 @@
-body {
+/* body {
     background-image: url("https://newsfeed.org/wp-content/uploads/camera-classic-instagram-1338789.jpg");
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 form {
-    background-color: #bb909e;
-    border: 5px solid #3d2c34;
+    /* background-color: #bb909e;
+    border: 5px solid #3d2c34; */
+    background-color: white;
+    border: 1px solid lightgrey;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,14 +18,29 @@ form {
     width: 400px;
     margin: 0 auto;
     padding: 0 1rem 1rem;
-    border-radius: 3px;
+    border-radius: 1px;
     text-align: center;
   }
   
   form input {
     margin: 0.25rem 0;
+    background-color: #F2F3F4;
   }
   
   form input[type="submit"] {
     width: 40%;
+  }
+
+  .login-component {
+    background-image: url("https://newsfeed.org/wp-content/uploads/camera-classic-instagram-1338789.jpg");
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+  }
+
+  .signup-component {
+    background-color: #F2F3F4;
+    height: 100vh;
   }

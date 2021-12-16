@@ -6,20 +6,21 @@ import Navigation from './components/Navigation';
 import Profile from './components/Profile';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import FeedContainer from './containers/FeedContainer'
 
-function App() {
+function App(props) {
 
   const [loggedIn, setLoggedIn] = useState(false)
 
   return (
     <div className="App">
-      {/* <h3>🚧 animalgram 2.0 🐕 under construction 🚧</h3> */}
-      {/* {loggedIn ? <Navigation /> : <Login/>} */}
-      {/* <Login /> */}
+      
+      { loggedIn ? <Navigation /> : null}
+      
       {/* react router dom version 6+ no longer uses "Switch", replaced with "Routes" */}
         <Routes>
-
-          <Route exact path='/profile' element={<Profile/>} />
+          <Route exact path='/' element={<FeedContainer loggedIn={loggedIn}/>} />
+          <Route exact path='/profile' element={<Profile loggedIn={loggedIn}/>} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
 

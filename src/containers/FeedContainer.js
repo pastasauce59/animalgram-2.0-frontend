@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Navigate } from 'react-router-dom'
 
-class FeedContainer extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
+function FeedContainer(props) {
+
+    if(!props.loggedIn){
+        return <Navigate to='/login' />
     }
+
+    return (
+        <div>
+            feed content goes here...
+        </div>
+    );
 }
 
 export default FeedContainer;

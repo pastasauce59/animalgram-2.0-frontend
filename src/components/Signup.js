@@ -77,11 +77,11 @@ function Signup(props) {
 
                 <input type='submit' value='Sign Up'/>
 
-                {/* <h6>Already have an account? <a href="http://localhost:3000/login">Log in</a></h6> */}
+                <p>By signing up, you agree to our terms of seeing adorable animals of all kinds.</p>
                 </form>
 
                 <form>
-                    <h6>Already have an account? <a href="http://localhost:3000/login">Log in</a></h6>
+                    <h6>Already have an account? <a href="/login">Log in</a></h6>
                 </form>
         </div>
     );

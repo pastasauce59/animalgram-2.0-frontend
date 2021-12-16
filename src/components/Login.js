@@ -52,7 +52,7 @@ function Login(props) {
             </form>
 
             <form>
-                <h6>Don't have an account? <a href="./Signup">Sign up</a></h6>
+                <h6>Don't have an account? <a href="/signup">Sign up</a></h6>
             </form>
         </div>
     );

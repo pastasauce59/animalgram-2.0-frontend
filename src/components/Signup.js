@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Navigate } from 'react-router-dom'
 
 function Signup(props) {
 
@@ -7,6 +8,10 @@ function Signup(props) {
     const [fullName, setFullName] = useState('')
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+
+    if (props.loggedIn){
+        return <Navigate to='/' />
+      }
 
     let handleChange = (e) => {
         if(e.target.name === "username"){

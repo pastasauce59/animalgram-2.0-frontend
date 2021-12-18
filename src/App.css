@@ -44,3 +44,8 @@ form {
     background-color: #F2F3F4;
     height: 100vh;
   }
+
+  .preview_image {
+    height:300px;
+    width: 400px
+  }

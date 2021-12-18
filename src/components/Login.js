@@ -1,9 +1,14 @@
 import React, { useState} from 'react';
+import { Navigate } from 'react-router-dom'
 
 function Login(props) {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+
+    if (props.loggedIn){
+        return <Navigate to='/' />
+      }
 
     let handleChange = (e) => {
         if(e.target.name === "username"){

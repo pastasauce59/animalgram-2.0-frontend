@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom'
+import FeedCard from '../components/FeedCard';
 
 function FeedContainer(props) {
 
@@ -9,7 +10,7 @@ function FeedContainer(props) {
 
     return (
         <div>
-            feed content goes here...
+            <FeedCard />
         </div>
     );
 }

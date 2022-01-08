@@ -49,3 +49,15 @@ form {
     height:300px;
     width: 400px
   }
+
+  .feed-card {
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feed-card img {
+    height: 300px;
+    width: 400px
+  }

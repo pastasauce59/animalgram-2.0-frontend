@@ -1,7 +1,7 @@
 // import React from "react"
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-function Navigation() {
+function Navigation(props) {
     return(
         <>
             {/* <h1>Navbar goes here</h1> */}
@@ -13,7 +13,14 @@ function Navigation() {
                         <Nav.Link href='/search'>🔎 Search</Nav.Link>
                         <Nav.Link href='/profile'>👤 Profile</Nav.Link>
                         <Nav.Link href='/post'>🆕 Post</Nav.Link>
-                    </Nav>
+                        <Nav.Link onClick={ () => {
+                            let confirmBox = window.confirm("Log out of Animalgram?")
+                                if (confirmBox === true){
+                                    props.loginStatus(false)
+                                }
+                            }
+                        }>📴 Logout</Nav.Link>
+                        </Nav>
                 </Container>  
             </Navbar>
 
